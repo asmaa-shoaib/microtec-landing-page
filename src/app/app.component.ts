@@ -9,7 +9,7 @@ import { HomeComponent } from "./core/home/home/home.component";
   standalone: true,
   imports: [RouterOutlet, NavComponent, FooterComponent, HomeComponent],
   templateUrl: './app.component.html',
-  styleUrl: './app.component.sass'
+  styleUrl: './app.component.scss'
 })
 export class AppComponent {
   title = 'microtect-landing-page';

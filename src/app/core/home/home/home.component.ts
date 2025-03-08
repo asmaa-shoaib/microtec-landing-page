@@ -9,7 +9,7 @@ import { CommonModule } from '@angular/common';
   standalone: true,
   imports: [HeaderComponent, ProductsComponent, ReviewsComponent,CommonModule],
   templateUrl: './home.component.html',
-  styleUrl: './home.component.sass'
+  styleUrl: './home.component.scss'
 })
 export class HomeComponent {
 
