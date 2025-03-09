@@ -1,0 +1,59 @@
+.sector-card {
+  transition: all 0.3s ease-in-out;
+  width: 12.5%;
+  height: 322px;
+}
+.sector-card .card {
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
+  height: 100%;
+  background-size: cover;
+}
+.sector-card img {
+  transition: transform 0.3s ease-in-out;
+  width: 100%;
+  height: auto;
+}
+.sector-card:hover img {
+}
+.sector-card .overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  top: 0;
+  background: rgba(0, 0, 0, 0.6);
+  padding: 15px;
+  text-align: end;
+  transition: opacity 0.3s ease-in-out;
+  opacity: 0;
+  display: flex;
+  flex-flow: column;
+  justify-content: end;
+  align-items: end;
+  .solution-item-btn{
+    color: #fff;
+    border: 1px solid #fff;
+    background-color: transparent;
+  }
+}
+.sector-card:hover .overlay {
+  opacity: 1;
+
+}
+.sector-card.active {
+   width: 50%;
+}
+@media (max-width:576px) {
+  .sector-card .overlay {
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  h5{
+    font-size: 18px;
+  }
+  }.sector-card.active {
+    width: 50%;
+ }
+}

@@ -1,0 +1,176 @@
+.tab-button {
+
+  background-color: #fafafa;
+  color: #30486D;
+  border-radius: 16px;
+  width: 191px;
+  height: 64px;
+  border: none;
+  font-size: 26px;
+  margin-right: 22px;
+
+  img {
+    color: #1A90B0;
+  }
+}
+
+.tab-button.active {
+  background-color: #1A90B0;
+  color: #F9F9F9;
+
+  .icon {
+    color: #F9F9F9;
+  }
+}
+
+.roducts-menu-item-list-title {
+  font-size: 36px;
+}
+
+.products-menu-item-list {
+  list-style: none;
+  padding: 0;
+
+  li {
+    font-size: 26px;
+
+    img {
+      padding-left: 10px;
+    }
+
+    p {
+      display: inline-block;
+      font-weight: normal;
+      margin-bottom: 0;
+    }
+  }
+}
+.img {
+  position: relative;
+  overflow: hidden;
+  text-align: center;
+  width: 100%;
+
+  img {
+    width: 100%
+  }
+}
+
+@media(min-width:992px) and (max-width:1350px) {
+  .tab-button {
+    width: 140px;
+    font-size: 18px;
+  }
+  .sales {
+    .products-menu-item-list-title{
+      font-size: 23px;
+    }
+    .products-menu-item-list p{
+      font-size: 20px;
+    }
+  }
+}
+
+
+@media(max-width:992px) and (min-width:772px) {
+  .tab-button {
+    width: 110px;
+    font-size: 16px;
+
+    img {
+      width: 24px;
+      height: 24px;
+    }
+  }
+
+  .sales {
+    .w-75 {
+      width: 100% !important;
+      .products-menu-item-list-title{
+        font-size: 23px;
+      }
+      .products-menu-item-list p{
+        font-size: 20px;
+      }
+    }
+    }
+  }
+
+@media(max-width:772px) and (min-width:593px) {
+  .tabs {
+    width: 100%;
+    padding: 0;
+
+  }
+
+  .tab-button {
+    width: 90px;
+    height: 35px;
+    font-size: 14px;
+    margin-right: 12px;
+
+    img {
+      width: 20px;
+      height: 20px;
+
+    }
+  }
+
+  .sales {
+
+    .w-75 {
+      width: 100% !important;
+
+      .img {
+        text-align: center;
+      }
+      .products-menu-item-list-title{
+        font-size: 20px;
+        text-align: center;
+      }
+      .products-menu-item-list p{
+        font-size: 18px;
+      }
+    }
+  }
+}
+
+@media(max-width:593px) {
+  .tabs {
+    width: 100%;
+    padding: 0;
+  }
+  .tab-button {
+    width: 95px;
+    height: 30px;
+    font-size: 14px;
+    margin: 6px;
+    img {
+      color: #1A90B0;
+      width: 20px;
+      height: 20px;
+
+    }
+  }
+
+  .sales {
+
+    .w-75 {
+      width: 100% !important;
+
+      .img {
+        text-align: center;
+
+        img {
+          width: 100%
+        }
+      }
+      .products-menu-item-list-title{
+        font-size: 20px;
+      }
+      .products-menu-item-list p{
+        font-size: 18px;
+      }
+    }
+  }
+}

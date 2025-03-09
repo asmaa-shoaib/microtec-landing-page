@@ -1,1 +1,39 @@
-<p>products works!</p>
+<section class="py-5">
+  <h2 class="section-title">المنتجات</h2>
+  <p class="section-description"> نقدم حلولًا تقنية مبتكرة لدعم الشركات في مختلف الصناعات، لمساعدتها على تحقيق النجاح
+    والتحول الرقمي بكفاءة.</p>
+  <div class="row mx-auto ">
+    <div class="col-12">
+      <div class="card-item p-2 d-md-block d-none">
+        <app-product-item [isMain]="true" [item]="items[0]"></app-product-item>
+      </div>
+    </div>
+    <div class="col-md-6 d-md-none d-lg-none">
+      <div class="card-item p-2">
+        <app-product-item [item]="items[0]"></app-product-item>
+      </div>
+    </div>
+    <div class="col-md-6">
+      <div class="card-item p-2">
+        <app-product-item [item]="items[1]"></app-product-item>
+      </div>
+    </div>
+    <div class="col-md-6">
+      <div class="card-item p-2">
+        <app-product-item [item]="items[2]"></app-product-item>
+      </div>
+
+    </div>
+    <div class="col-md-6">
+      <div class="card-item p-2">
+        <app-product-item [item]="items[3]"></app-product-item>
+      </div>
+    </div>
+    <div class="col-md-6">
+      <div class="card-item p-2">
+        <app-product-item [item]="items[4]"></app-product-item>
+      </div>
+    </div>
+
+  </div>
+</section>

@@ -1,1 +1,28 @@
-<p>solutions works!</p>
+<section class="section-servicepy-5">
+  <div class="container-fluid">
+    <h2 class="section-title">حل متكامل ومرن يدعم العديد من القطاعات</h2>
+    <p class="section-description">
+      نقدم حلولًا تقنية مبتكرة لدعم الشركات في مختلف الصناعات، لمساعدتها على تحقيق النجاح والتحول الرقمي بكفاءة.
+        </p>
+    <div class="row px-3 justify-content-center">
+      <div
+        *ngFor="let sector of sectors; let i=index"
+        class="col-6 col-md-3 px-2 sector-card"
+        [ngClass]="{'active': activeSector === sector }"
+        (mouseenter)="activeSector = sector"
+        (mouseleave)="activeSector = null"
+      >
+        <div class="card overflow-hidden" style="background-image: url({{sector.image}});">
+          <!-- <img [src]="sector.image" class="card-img img-fluid"> -->
+          <div class="overlay p-5">
+            <h5 class="text-white">{{ sector.title }}</h5>
+            <a class="btn solution-item-btn" href="#">المزيد</a>
+          </div>
+        </div>
+      </div>
+
+
+    </div>
+
+  </div>
+</section>

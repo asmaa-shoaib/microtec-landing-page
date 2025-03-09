@@ -1,0 +1,16 @@
+
+<div class="card row flex-row  align-items-center p-2" [ngClass]="{'':isMain}"[ngClass]="isMain ? 'justify-content-center' : 'justify-content-between'">
+  <div class=" p-0" [ngClass]="isMain ? 'col-6' : 'col-7'">
+    <div class="card-description p-lg-3 p-1">
+      <h5 class="card-title">{{item.title}}</h5>
+      <p class="card-text">{{item.description}}</p>
+      <div class="text-start px-4">
+        <a  class="btn btn-seemore " [routerLink]="['/product', item.id]">المزيد</a>
+      </div>
+    </div>
+  </div>
+  <div class=" p-0" [ngClass]="isMain ? 'col-4' : 'col-5'">
+    <div class="card-img-container text-center p-2">
+      <img src="{{item.img}}" class="img-fluid" alt="Product Image"></div>
+  </div>
+</div>

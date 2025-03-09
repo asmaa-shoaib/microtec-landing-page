@@ -1,0 +1,208 @@
+
+
+<section class="py-5">
+  <h2 class="section-title">أعمالك مبسطة,إدارة كل ما تحتاجه في نظام <span>واحد</span> </h2>
+  <div class="row d-flex justify-content-center">
+    <div class="tab-container justify-content-center">
+        <div class="tabs  text-center py-5">
+            <button class="tab-button" [class.active]="activeTab === 'financial'" (click)="selectTab('financial')">
+            <span>المالية</span>
+              <img class="icon img-fluid" src="../../../../assets/images/icons/finaial.svg" alt="icon">
+            </button>
+            <button class="tab-button" [class.active]="activeTab === 'hr'" (click)="selectTab('hr')">
+              <span>HR</span>
+              <img class="icon img-fluid"  src="../../../../assets/images/icons/hr.svg" alt="icon">
+
+            </button>
+            <button class="tab-button" [class.active]="activeTab === 'inventory'" (click)="selectTab('inventory')">
+              <span>المخازن</span>
+              <img class="icon img-fluid"  src="../../../../assets/images/icons/Garage.svg" alt="icon">
+
+          </button>
+          <button class="tab-button" [class.active]="activeTab === 'items'" (click)="selectTab('items')">
+            <span>المشتريات</span>
+            <img  class="icon img-fluid" src="../../../../assets/images/icons/Cart Check.svg" alt="icon">
+
+          </button>
+          <button class="tab-button" [class.active]="activeTab === 'sales'" (click)="selectTab('sales')">
+            <span>المبيعات</span>
+            <img  class="icon img-fluid" src="../../../../assets/images/icons/sales.svg" alt="icon">
+          </button>
+        </div>
+    </div>
+  </div>
+  <div class="products-menu-items">
+    <div class="sales" *ngIf="activeTab === 'financial'">
+      <div class="mx-auto w-75">
+        <div class="row justify-content-lg-end justify-content-center align-items-center">
+          <div class="col-md-6">
+            <div class="img w-100">
+              <img src="../../../../assets/images/products/Rectangle 18 .png" clasa="img-fluid" alt="sales-1">
+            </div>
+          </div>
+          <div class=" col-md-5 py-3 pe-md-5" >
+            <div class="sales-content">
+              <h3 class="products-menu-item-list-title">نظام الماليات</h3>
+              <ul class="products-menu-item-list">
+                <li>
+                  <img src="../../../../assets/images/icons/li-icon.svg" alt="icon">
+                  <p>تقارير وتحليلات الماليات</p>
+                </li>
+                <li>
+                  <img src="../../../../assets/images/icons/li-icon.svg" alt="icon">
+                  <p>إدارة طلبات البيع</p>
+                </li>
+                <li>
+                  <img src="../../../../assets/images/icons/li-icon.svg" alt="icon">
+                  <p>إدارة العملاء</p>
+                </li>
+                <li>
+                  <img src="../../../../assets/images/icons/li-icon.svg" alt="icon">
+                  <p>إعداد الحسابات</p>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="sales"  *ngIf="activeTab === 'hr'">
+      <div class="mx-auto w-75">
+        <div class="row justify-content-lg-end justify-content-center align-items-center">
+          <div class="col-md-6">
+            <div class="img w-100">
+              <img src="../../../../assets/images/products/Rectangle 18 .png" clasa="img-fluid" alt="sales-1">
+            </div>
+          </div>
+          <div class=" col-md-5 py-3 pe-md-5" >
+            <div class="sales-content">
+              <h3 class="products-menu-item-list-title">نظام الموارد</h3>
+              <ul class="products-menu-item-list">
+                <li>
+                  <img src="../../../../assets/images/icons/li-icon.svg" alt="icon">
+                  <p>تقارير وتحليلات الموارد</p>
+                </li>
+                <li>
+                  <img src="../../../../assets/images/icons/li-icon.svg" alt="icon">
+                  <p>إدارة طلبات الموارد</p>
+                </li>
+                <li>
+                  <img src="../../../../assets/images/icons/li-icon.svg" alt="icon">
+                  <p>إدارة الموارد</p>
+                </li>
+                <li>
+                  <img src="../../../../assets/images/icons/li-icon.svg" alt="icon">
+                  <p>إعداد الحسابات</p>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="sales" *ngIf="activeTab === 'inventory'">
+
+      <div class="mx-auto w-75">
+        <div class="row justify-content-lg-end justify-content-center align-items-center">
+          <div class="col-md-6">
+            <div class="img w-100">
+              <img src="../../../../assets/images/products/Rectangle 18 .png" clasa="img-fluid" alt="sales-1">
+            </div>
+          </div>
+          <div class=" col-md-5 py-3 pe-md-5" >
+            <div class="sales-content">
+              <h3 class="products-menu-item-list-title">نظام المخازن</h3>
+              <ul class="products-menu-item-list">
+                <li>
+                  <img src="../../../../assets/images/icons/li-icon.svg" alt="icon">
+                  <p>تقارير وتحليلات المخازن</p>
+                </li>
+                <li>
+                  <img src="../../../../assets/images/icons/li-icon.svg" alt="icon">
+                  <p>إدارة طلبات المخازن</p>
+                </li>
+                <li>
+                  <img src="../../../../assets/images/icons/li-icon.svg" alt="icon">
+                  <p>إدارة المخازن</p>
+                </li>
+                <li>
+                  <img src="../../../../assets/images/icons/li-icon.svg" alt="icon">
+                  <p>إعداد المخازن</p>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="sales" *ngIf="activeTab === 'items'">
+
+      <div class="mx-auto w-75">
+        <div class="row justify-content-lg-end justify-content-center align-items-center">
+          <div class="col-md-6">
+            <div class="img w-100">
+              <img src="../../../../assets/images/products/Rectangle 18 .png" clasa="img-fluid" alt="sales-1">
+            </div>
+          </div>
+          <div class=" col-md-5 py-3 pe-md-5" >
+            <div class="sales-content">
+              <h3 class="products-menu-item-list-title">نظام المشتريات</h3>
+              <ul class="products-menu-item-list">
+                <li>
+                  <img src="../../../../assets/images/icons/li-icon.svg" alt="icon">
+                  <p>تقارير وتحليلات المشتريات</p>
+                </li>
+                <li>
+                  <img src="../../../../assets/images/icons/li-icon.svg" alt="icon">
+                  <p>إدارة طلبات المشتريات</p>
+                </li>
+                <li>
+                  <img src="../../../../assets/images/icons/li-icon.svg" alt="icon">
+                  <p>إدارة المشتريات</p>
+                </li>
+                <li>
+                  <img src="../../../../assets/images/icons/li-icon.svg" alt="icon">
+                  <p>إعداد المشتريات</p>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="sales" *ngIf="activeTab ==='sales'">
+      <div class="mx-auto w-75">
+        <div class="row justify-content-lg-end justify-content-center align-items-center">
+          <div class="col-md-6">
+            <div class="img w-100">
+              <img src="../../../../assets/images/products/Rectangle 18 .png" clasa="img-fluid" alt="sales-1">
+            </div>
+          </div>
+          <div class=" col-md-5 py-3 pe-md-5" >
+            <div class="sales-content">
+              <h3 class="products-menu-item-list-title">نظام المبيعات</h3>
+              <ul class="products-menu-item-list">
+                <li>
+                  <img src="../../../../assets/images/icons/li-icon.svg" alt="icon">
+                  <p>تقارير وتحليلات المبيعات</p>
+                </li>
+                <li>
+                  <img src="../../../../assets/images/icons/li-icon.svg" alt="icon">
+                  <p>إدارة طلبات البيع</p>
+                </li>
+                <li>
+                  <img src="../../../../assets/images/icons/li-icon.svg" alt="icon">
+                  <p>إدارة العملاء</p>
+                </li>
+                <li>
+                  <img src="../../../../assets/images/icons/li-icon.svg" alt="icon">
+                  <p>إعداد الفواتير</p>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

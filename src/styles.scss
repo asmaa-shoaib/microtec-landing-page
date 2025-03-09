@@ -1,3 +1,56 @@
 *{
   direction: rtl;
+  font-family: 'Cairo','IBM Plex Sans',sans-serif;
+}
+.container-fluid{
+  width: 90% !important;
+}
+.bg-dark{
+  background-color: #08081E !important;
+}
+.section-title{
+  text-align: center;
+  font-size: 36px;
+  font-weight:600;
+  color: #30486D;
+  span{
+    color:#1A90B0;
+  }
+}
+.section-description{
+  text-align: center;
+  font-size: 18px;
+  font-weight:normal;
+  color: #30486D;
+}
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  overflow-x: hidden;
+}
+@media (min-width:992px) and (max-width:1200px){
+  .section-title{
+    font-size: 30px;
+  }
+}
+@media (min-width:772px) and (max-width:992px){
+  .section-title{
+    font-size: 25px;
+  }
+}
+@media (min-width:573px) and (max-width:772px){
+  .section-title{
+    font-size: 25px;
+  }
+}
+@media(max-width:573px){
+  .py-5{
+    padding-top: 25px !important;
+    padding-bottom: 25px !important;
+  }
+  .section-title{
+    font-size: 25px;
+  }
 }
